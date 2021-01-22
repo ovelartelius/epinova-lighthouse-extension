@@ -8,5 +8,9 @@ Install the extension to your Azure DevOps project: [https://marketplace.visuals
 Microsoft has general information on how to install an Azure DevOps extension:  [https://docs.microsoft.com/en-us/azure/devops/marketplace/install-extension](https://docs.microsoft.com/en-us/azure/devops/marketplace/install-extension)  
 In the end of that page, there also a link to how to manage extension permission. [https://docs.microsoft.com/en-us/azure/devops/marketplace/how-to/grant-permissions](https://docs.microsoft.com/en-us/azure/devops/marketplace/how-to/grant-permissions)  
 
+## Tasks
+### Start Lighthouse Test
+[Start Lighthouse Test documentation](documentation/StartLighthouseTest.md)  
+
 ## Release notes ##
 [Release notes](src/ReleaseNotes.md)

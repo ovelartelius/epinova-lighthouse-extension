@@ -1,0 +1,82 @@
+{
+    "manifestVersion": 1,
+    "id": "epinova-lighthouse-extension",
+    "publisher": "epinova-sweden",
+    "version": "0.1.0",
+    "name": "Epinova Lighthouse",
+    "description": "Task(s) to start a Lighthouse test against your project.",
+    "public": false,
+    "icons":{
+        "default": "img/Epinova_e_128x128.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags":[
+        "Release",
+        "Epinova",
+        "Lighthouse",
+        "Deploy",
+        "Publish",
+        "Test",
+        "Continuous Integration",
+        "Continuous Delivery",
+        "Build",
+        "Release",
+        "Azure Pipelines"
+    ],
+    "branding":{
+        "color": "rgb(255,255,255)",
+        "theme": "light"
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "license.md"
+        }
+    },
+    "links": {
+        "repository": {
+            "uri": "https://github.com/ovelartelius/epinova-lighthouse-extension"
+        },
+        "company": {
+            "uri": "https://www.epinova.se"
+        },
+        "contact": {
+            "uri": "mailto:info@epinova.se"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/ovelartelius/epinova-lighthouse-extension"
+    },
+    "contributions": [
+        {
+            "id": "epinova-startlighthousetest-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "StartLighthouseTest"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "StartLighthouseTest"
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}
