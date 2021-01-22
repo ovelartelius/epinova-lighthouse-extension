@@ -13,8 +13,6 @@ try {
     Write-Host "EnvironmentId: $environmentId"
     Write-Host "Commit: $commit"
 
-    WriteInfo
-
     $baseUrl = "https://lighthouse.epinova.no/api/job"
     $headers = @{
         'content-type' = 'application/json'
