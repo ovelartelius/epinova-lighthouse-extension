@@ -1,0 +1,6 @@
+steps:  
+- template: build-lighthouse-node-task_ubuntu.yml
+  parameters:
+    extensionRoot: '$(System.DefaultWorkingDirectory)/src'
+    taskName: 'StartLighthouseTest/StartLighthouseTestV2'
+
