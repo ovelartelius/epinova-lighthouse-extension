@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "epinova-lighthouse-extension",
     "publisher": "epinova-sweden",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "name": "Epinova Lighthouse",
     "description": "Task(s) to start a Lighthouse test against your project.",
     "public": false,

@@ -13,7 +13,7 @@
     "version": {
         "Major": 2,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 1
     },
     "groups": [
         {
@@ -65,11 +65,8 @@
     ],
     "instanceNameFormat": "Start Lighthouse test for $(EnvironmentId)",
     "execution": {
-        "PowerShell3": {
-            "target": "StartLighthouseTest.ps1"
+        "Node10": {
+            "target": "StartLighthouseTest.js"
         }
-    },
-    "messages": {
-        "PS_TM_ParseSessionVariablesValueNotFound": "Parsing operation failed. ErrorMessage: 'value not found', Token: '{0}', CurrentKey: '{1}'"
     }
 }
