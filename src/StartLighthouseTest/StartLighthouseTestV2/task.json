@@ -1,0 +1,75 @@
+{
+    "id": "603c2014-0e73-4477-87b2-768a85ad426a",
+    "name": "StartLighthouseTest",
+    "friendlyName": "Start Lighthouse Test",
+    "description": "Starts a lighthouse test against your website.",
+    "helpUrl": "https://github.com/ovelartelius/epinova-lighthouse-extension/blob/master/documentation/StartLighthouseTest.md",
+    "helpMarkDown": "[Extension page](https://marketplace.visualstudio.com/items?itemName=epinova-sweden.epinova-lighthouse-extension)[Learn more about this task](https://github.com/ovelartelius/epinova-lighthouse-extension/blob/master/documentation/StartLighthouseTest.md)",
+    "category": "Deploy",
+    "visibility": [
+        "Release"
+    ],
+    "author": "Ove Lartelius",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 1
+    },
+    "groups": [
+        {
+            "name": "Settings",
+            "displayName": "Script settings",
+            "isExpanded": true
+        },
+        {
+            "name": "ErrorHandlingOptions",
+            "displayName": "Error handling options",
+            "isExpanded": false
+        }
+    ],
+    "releaseNotes": "Created the task.",
+    "minimumAgentVersion": "2.134.0",
+    "inputs": [
+        {
+            "name": "EnvironmentId",
+            "type": "string",
+            "label": "Environment Id",
+            "required": true,
+            "defaultValue": "$(EnvironmentId)",
+            "helpMarkDown": "The environment id. Need to get it from Epinova Lighthouse website.",
+            "groupName": "Settings"
+        },
+        {
+            "name": "Commit",
+            "type": "string",
+            "label": "Commit",
+            "required": false,
+            "defaultValue": "$(Commit)",
+            "helpMarkDown": "The commit from git.",
+            "groupName": "Settings"
+        },
+        {
+            "name": "ErrorActionPreference",
+            "type": "pickList",
+            "label": "ErrorActionPreference",
+            "required": false,
+            "defaultValue": "stop",
+            "options": {
+                "stop": "Stop",
+                "continue": "Continue",
+                "silentlyContinue": "SilentlyContinue"
+            },
+            "helpMarkDown": "Prepends the line `$ErrorActionPreference = 'VALUE'` at the top of your script.",
+            "groupName": "ErrorHandlingOptions"
+        }
+    ],
+    "instanceNameFormat": "Start Lighthouse test for $(EnvironmentId)",
+    "execution": {
+        "PowerShell3": {
+            "target": "StartLighthouseTest.ps1"
+        }
+    },
+    "messages": {
+        "PS_TM_ParseSessionVariablesValueNotFound": "Parsing operation failed. ErrorMessage: 'value not found', Token: '{0}', CurrentKey: '{1}'"
+    }
+}

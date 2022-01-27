@@ -1,6 +1,8 @@
 # Epinova Lighthouse Azure Extension
-Azure DevOps for Epinova Lighthouse test(s). 
-
+Azure DevOps for Epinova Lighthouse test(s).  
+  
+Now cross platform support. v2 of tasks support Windows/Ubuntu/MacOS.  
+  
 ## Install 
 [How to install Epinova DXP Deployment extension](documentation/InstallExtension.md)  
 **In short:**
