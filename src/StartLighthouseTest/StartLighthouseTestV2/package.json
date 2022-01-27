@@ -23,7 +23,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:Epinova/epinova-dxp-deployment.git"
+        "url": "git@ssh.dev.azure.com:v3/ovelartelius/epinova-lighthouse-extension"
     },
     "author": "Ove Lartelius",
     "license": "MIT"
